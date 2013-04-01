@@ -13,9 +13,6 @@ uses
   RemObjects.SDK.Server;
 
 type
-  /// <summary>
-  /// Summary description for Scheduler.
-  /// </summary>
   IPhoneNotifier = public static partial class
   private
     fTimer: System.Timers.Timer := nil;
@@ -60,7 +57,7 @@ begin
     using lCient: WebClient := new WebClient() do 
       lNewWebsite := lCient.DownloadString(URL);
 
-    if {assigned(fLastWebsite) and} (fLastWebsite ≠ lNewWebsite) then begin
+    if assigned(fLastWebsite) and (fLastWebsite ≠ lNewWebsite) then begin
       
       writeLn('sending alarm');
       for each d in PushDeviceManager.Devices.Values do

@@ -27,7 +27,7 @@ begin
   var lCertificatePath := Path.ChangeExtension(typeOf(self).Assembly.Location, 'p12');
   PushDeviceManager.DeviceStoreFile :=  Path.ChangeExtension(typeOf(self).Assembly.Location, 'devices');
   PushDeviceManager.CertificateFile := lCertificatePath;
-  PushDeviceManager.APSConnect.ApsHost := 'gateway.sandbox.push.apple.com';
+  PushDeviceManager.APSConnect.ApsHost := 'gateway.sandbox.push.apple.com'; // for this app, we're staying in the sandbox
   PushDeviceManager.RequireSession := false;
   writeLn('Loaded Certificate from '+lCertificatePath);
 
@@ -39,8 +39,6 @@ begin
 
   lServerChannel.Dispatchers.Add(lMessage.DefaultDispatcherName, lMessage);
         
-  //ToDo: add code to configure your ServerChannel and Message and objects here, if needed
-
   lServerChannel.Open();
   try
     Console.WriteLine('Server is active, press Enter to stop.');
