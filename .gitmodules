@@ -1,3 +1,4 @@
 [submodule "Push"]
 	path = Push
-	url = git@github.com:remobjects/Push.git
+	url = git://github.com/remobjects/Push.git
+
