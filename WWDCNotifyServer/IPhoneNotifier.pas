@@ -23,8 +23,8 @@ type
     
     fLastWebsite: String;
     fLifesignCounter: Int32;
-    const PING_TIME = 5*60*1000; // 5 mins
-    const LIFESIGN_MAX = 12*2;   // every 2 hours, at 5mins intervals
+    const PING_TIME = 5*60*1000; // we check the website every 5 mins
+    const LIFESIGN_MAX = 12*2;   // we send a "lifesign" push every 2 hours (after 24 5 min intervals), because we have ADD and will worry otherwise
     const URL = 'https://developer.apple.com/wwdc/';
 
     method TimerElapsed(sender: Object; e: System.Timers.ElapsedEventArgs);

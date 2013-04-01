@@ -89,14 +89,6 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\RemObjects.SDK.ApplePushProvider\RemObjects.SDK.ApplePushProvider.oxygene">
-      <Name>RemObjects.SDK.ApplePushProvider</Name>
-      <Project>{6ee56252-1979-48fa-8409-3dced05426c3}</Project>
-      <Private>True</Private>
-      <HintPath>..\..\RemObjects.SDK.ApplePushProvider\bin\Debug\RemObjects.SDK.ApplePushProvider.dll</HintPath>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.targets" />
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\RemObjects SDK\RemObjects.SDK.targets" />
   <PropertyGroup>

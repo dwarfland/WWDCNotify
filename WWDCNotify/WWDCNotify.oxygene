@@ -60,6 +60,9 @@
     <Compile Include="RootViewController.pas" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RemObjects.SDK.ApplePushProvider.oxygene">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Resources\Info.plist" />
     <AppResource Include="Resources\App Icons\App-29.png" />
     <AppResource Include="Resources\App Icons\App-48.png" />
