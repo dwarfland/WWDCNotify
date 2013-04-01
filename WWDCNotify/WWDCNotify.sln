@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "WWDCNotify", "WWDCNotify.oxygene", "{CBD0C7B9-258B-4A38-A0D1-7720FA834904}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "WWDCNotifyServer", "..\WWDCNotifyServer\WWDCNotifyServer.oxygene", "{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemObjects.SDK.ApplePushProvider", "..\..\RemObjects.SDK.ApplePushProvider\RemObjects.SDK.ApplePushProvider.oxygene", "{6EE56252-1979-48FA-8409-3DCED05426C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|AnyCPU = Release|AnyCPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Debug|AnyCPU.ActiveCfg = Debug
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Debug|AnyCPU.Build.0 = Debug
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Debug|Mixed Platforms.Build.0 = Debug
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|AnyCPU.ActiveCfg = Release
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|AnyCPU.Build.0 = Release
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|Mixed Platforms.ActiveCfg = Release
+		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|Mixed Platforms.Build.0 = Release
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Debug|AnyCPU.ActiveCfg = Debug
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Debug|AnyCPU.Build.0 = Debug
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Debug|Mixed Platforms.Build.0 = Debug
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Release|AnyCPU.ActiveCfg = Release
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Release|AnyCPU.Build.0 = Release
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Release|Mixed Platforms.ActiveCfg = Release
+		{CFF5A4E9-68A6-47F7-B477-42CF1FB7BE58}.Release|Mixed Platforms.Build.0 = Release
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|Mixed Platforms.ActiveCfg = Debug|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|Mixed Platforms.Build.0 = Debug|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Release|Mixed Platforms.ActiveCfg = Release|AnyCPU
+		{6EE56252-1979-48FA-8409-3DCED05426C3}.Release|Mixed Platforms.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
