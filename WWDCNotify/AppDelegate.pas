@@ -10,7 +10,7 @@ type
   [IBObject]
   AppDelegate = class(IUIApplicationDelegate)
   private
-    const URL = 'http://McMervyn.local:8097/bin'; 
+    const URL = 'http://McMervyn.local:8097/bin';
     //const URL := 'http://berlin.elitedev.com:8097/bin';  // log: shitty error recovery from this
   public
     property window: UIWindow;
@@ -37,9 +37,9 @@ begin
   window.makeKeyAndVisible;
   result := true;
 
-  application.registerForRemoteNotificationTypes(UIRemoteNotificationType.UIRemoteNotificationTypeAlert or 
-                                                 UIRemoteNotificationType.UIRemoteNotificationTypeBadge or 
-                                                 UIRemoteNotificationType.UIRemoteNotificationTypeSound) 
+  application.registerForRemoteNotificationTypes(UIRemoteNotificationType.UIRemoteNotificationTypeAlert or
+                                                 UIRemoteNotificationType.UIRemoteNotificationTypeBadge or
+                                                 UIRemoteNotificationType.UIRemoteNotificationTypeSound)
 end;
 
 method AppDelegate.applicationWillResignActive(application: UIApplication);
@@ -76,15 +76,15 @@ end;
 
 method AppDelegate.application(application: UIKit.UIApplication) didRegisterForRemoteNotificationsWithDeviceToken(deviceToken: Foundation.NSData);
 begin
-  NSLog('Registered for push with devcie id %@', deviceToken.description); 
+  NSLog('Registered for push with devcie id %@', deviceToken.description);
 
-  var p := new ApplePushProviderService_AsyncProxy withURL(new NSURL withString(URL)); 
+  var p := new ApplePushProviderService_AsyncProxy withURL(new NSURL withString(URL));
   p.beginRegisterDevice(deviceToken, UIDevice.currentDevice.name) startWithBlock(method (aRequest: ROAsyncRequest) begin
- 
+
       try
         p.endRegisterDevice(aRequest);
         NSLog('Registered with server');
-        var lAlert := new UIAlertView withTitle('All set!') message('You are registered for Push Notitications!') &delegate(nil) cancelButtonTitle('Cancel') otherButtonTitles(nil);
+        var lAlert := new UIAlertView withTitle('All set!') message('You are registered for Push Notitications!') &delegate(nil) cancelButtonTitle('Okay!') otherButtonTitles(nil);
         lAlert.show();
       except
         on E: NSException do begin
