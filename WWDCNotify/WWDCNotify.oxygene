@@ -69,15 +69,9 @@
     <AppResource Include="Resources\App Icons\App-96.png" />
     <AppResource Include="Resources\App Icons\App-114.png" />
     <AppResource Include="Resources\App Icons\App-144.png" />
-    <None Include="Resources\App Icons\App-512.png" />
-    <None Include="Resources\App Icons\App-1024.png" />
     <AppResource Include="Resources\Launch Images\Default.png" />
     <AppResource Include="Resources\Launch Images\Default@2x.png" />
     <AppResource Include="Resources\Launch Images\Default-568h@2x.png" />
-    <AppResource Include="Resources\Launch Images\Default-Portrait.png" />
-    <AppResource Include="Resources\Launch Images\Default-Portrait@2x.png" />
-    <AppResource Include="Resources\Launch Images\Default-Landscape.png" />
-    <AppResource Include="Resources\Launch Images\Default-Landscape@2x.png" />
   </ItemGroup>
   <ItemGroup>
     <Xib Include="RootViewController~ipad.xib" />
