@@ -21,7 +21,7 @@ type
     fLastWebsite: String;
     fLifesignCounter: Int32;
     const PING_TIME = 5*60*1000; // we check the website every 5 mins
-    const LIFESIGN_MAX = 12*2;   // we send a "lifesign" push every 2 hours (after 24 5 min intervals), because we have ADD and will worry otherwise
+    const LIFESIGN_MAX = 12*6;   // we send a "lifesign" push every 6 hours (after 12 5 min intervals per hour), because we have OCD and will worry otherwise
     const URL = 'https://developer.apple.com/wwdc/';
 
     method TimerElapsed(sender: Object; e: System.Timers.ElapsedEventArgs);
@@ -54,8 +54,8 @@ begin
 
     writeLn('checking '+URL);
     var lNewWebsite: String;
-    using lCient: WebClient := new WebClient() do 
-      lNewWebsite := lCient.DownloadString(URL);
+    using lClient: WebClient := new WebClient() do 
+      lNewWebsite := lClient.DownloadString(URL);
 
     if assigned(fLastWebsite) and (fLastWebsite ≠ lNewWebsite) then begin
       

@@ -84,7 +84,7 @@ begin
       try
         p.endRegisterDevice(aRequest);
         NSLog('Registered with server');
-        var lAlert := new UIAlertView withTitle('All set!') message('You are registered for Push Notitications!') &delegate(nil) cancelButtonTitle('Okay!') otherButtonTitles(nil);
+        var lAlert := new UIAlertView withTitle('All set!') message('You are registered for Push Notifications!') &delegate(nil) cancelButtonTitle('Okay!') otherButtonTitles(nil);
         lAlert.show();
       except
         on E: NSException do begin
