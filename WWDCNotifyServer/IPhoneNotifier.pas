@@ -20,9 +20,9 @@ type
     
     fLastWebsite: String;
     fLifesignCounter: Int32;
-    const PING_TIME = 5*60*1000; // we check the website every 5 mins
-    const LIFESIGN_MAX = 12*6;   // we send a "lifesign" push every 6 hours (after 12 5 min intervals per hour), because we have OCD and will worry otherwise
-    const URL = 'https://developer.apple.com/wwdc/';
+    const PING_TIME = 1*1000; // we check the website every 5 mins
+    const LIFESIGN_MAX = 12000*6;   // we send a "lifesign" push every 6 hours (after 12 5 min intervals per hour), because we have OCD and will worry otherwise
+    const URL = 'https://developer.apple.com/wwdc/';//'https://developer.apple.com/wwdc/tickets/';
 
     method TimerElapsed(sender: Object; e: System.Timers.ElapsedEventArgs);
   protected
@@ -52,7 +52,7 @@ begin
 
     inc(fLifesignCounter);
 
-    writeLn('checking '+URL);
+    writeLn('checking '+URL+' '+fLifesignCounter);
     var lNewWebsite: String;
     using lClient: WebClient := new WebClient() do 
       lNewWebsite := lClient.DownloadString(URL);

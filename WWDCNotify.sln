@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20709.1 DP
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "WWDCNotify", "WWDCNotify\WWDCNotify.oxygene", "{CBD0C7B9-258B-4A38-A0D1-7720FA834904}"
 EndProject
-Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "WWDCNotifyServer", "WWDCNotifyServer\WWDCNotifyServer.oxygene", "{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}"
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "WWDCNotifyServer", "WWDCNotifyServer\WWDCNotifyServer.oxygene", "{A6938294-5E2B-4FAD-9A88-BB830D674122}"
 EndProject
 Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemObjects.SDK.ApplePushProvider", "Push\RemObjects.SDK.ApplePushProvider\RemObjects.SDK.ApplePushProvider.oxygene", "{6EE56252-1979-48FA-8409-3DCED05426C3}"
 EndProject
@@ -23,14 +25,14 @@ Global
 		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|AnyCPU.Build.0 = Release
 		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|Mixed Platforms.ActiveCfg = Release
 		{CBD0C7B9-258B-4A38-A0D1-7720FA834904}.Release|Mixed Platforms.Build.0 = Release
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Debug|AnyCPU.ActiveCfg = Debug
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Debug|AnyCPU.Build.0 = Debug
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Debug|Mixed Platforms.Build.0 = Debug
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Release|AnyCPU.ActiveCfg = Release
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Release|AnyCPU.Build.0 = Release
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Release|Mixed Platforms.ActiveCfg = Release
-		{E9946515-ED99-4419-B6A3-76F4CFE0AD7F}.Release|Mixed Platforms.Build.0 = Release
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Debug|AnyCPU.ActiveCfg = Debug
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Debug|AnyCPU.Build.0 = Debug
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Debug|Mixed Platforms.Build.0 = Debug
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Release|AnyCPU.ActiveCfg = Release
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Release|AnyCPU.Build.0 = Release
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Release|Mixed Platforms.ActiveCfg = Release
+		{A6938294-5E2B-4FAD-9A88-BB830D674122}.Release|Mixed Platforms.Build.0 = Release
 		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
 		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
 		{6EE56252-1979-48FA-8409-3DCED05426C3}.Debug|Mixed Platforms.ActiveCfg = Debug|AnyCPU

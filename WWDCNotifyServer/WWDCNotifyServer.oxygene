@@ -13,6 +13,7 @@
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>WWDCNotifyServer</Name>
+    <ProjectGuid>{a6938294-5e2b-4fad-9a88-bb830d674122}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>.\bin\Debug</OutputPath>
@@ -97,7 +98,7 @@
       <HintPath>..\Push\RemObjects.SDK.ApplePushProvider\bin\Debug\RemObjects.SDK.ApplePushProvider.dll</HintPath>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Echoes.targets" />
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\RemObjects SDK\RemObjects.SDK.targets" />
   <PropertyGroup>
     <PreBuildEvent />
